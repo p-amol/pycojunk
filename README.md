@@ -9,6 +9,21 @@ $ pip install pycojunk
 ```
 
 ## Usage
+`pycojunk` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from pycojunk.pycojunk import count_words
+from pycojunk.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
+
+
 
 - TODO
 
